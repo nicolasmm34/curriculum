@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Carta de presentación — estilos específicos (Proyecto Curriculum2)
+   Carga después de styles.css
+   ========================================================================== */
+
+.carta-body { background: var(--paper); }
+
+/* ---------- Barra de herramientas ---------- */
+.carta-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--navy); border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+.carta-bar__inner {
+  max-width: 1400px; margin-inline: auto; padding: .7rem clamp(1rem, 3vw, 2rem);
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.carta-bar__back {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-size: .9rem; font-weight: 500; color: rgba(255, 255, 255, .88);
+  transition: color var(--t-fast), gap var(--t-fast);
+}
+.carta-bar__back svg { font-size: 1.1rem; }
+.carta-bar__back:hover { color: #fff; gap: .7rem; }
+.carta-bar__actions { display: flex; align-items: center; gap: .6rem; }
+
+/* ---------- Documento ---------- */
+.carta-main { padding-block: clamp(1.6rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem); }
+
+.carta {
+  width: min(100% - 2.5rem, 820px); margin-inline: auto;
+  background: #fff; border: 1px solid var(--line); border-radius: 18px;
+  padding: clamp(1.6rem, 4.5vw, 3.2rem);
+  box-shadow: var(--shadow-lg);
+  font-size: 1.02rem;
+}
+
+.carta__header {
+  display: flex; flex-wrap: wrap; gap: 1.2rem 2rem;
+  justify-content: space-between; align-items: flex-start;
+  padding-bottom: 1.3rem; margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--brand);
+}
+.carta__name { font-size: clamp(1.45rem, 3.4vw, 2rem); margin-bottom: .2rem; }
+.carta__role { margin: 0; font-size: .92rem; color: var(--brand); font-weight: 600; }
+.carta__contact { display: grid; gap: .3rem; font-size: .86rem; color: var(--ink-soft); }
+.carta__contact li { display: flex; gap: .5rem; }
+.carta__contact span { color: var(--muted); min-width: 5.2rem; }
+
+.carta__meta { margin-bottom: 1.5rem; }
+.carta__meta p { margin: 0 0 .4rem; }
+.carta__subject { font-weight: 600; color: var(--ink); }
+.carta__subject::before {
+  content: ""; display: inline-block; width: 3px; height: 1em;
+  background: var(--brand); border-radius: 2px; margin-right: .5rem; vertical-align: -2px;
+}
+
+.carta p { margin: 0 0 1.1rem; }
+.carta strong { color: var(--ink); font-weight: 600; }
+
+.carta__firma { margin-top: 2.2rem; }
+.carta__firma p { margin: 0 0 .3rem; }
+.carta__firma-name {
+  font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700; color: var(--ink);
+  border-bottom: 1px solid var(--brand); padding-bottom: .2rem; display: inline-block;
+}
+.carta__firma-role { font-size: .86rem; color: var(--muted); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 620px) {
+  .carta-bar__back span { display: none; }
+  .carta__header { flex-direction: column; }
+  .carta__contact li { flex-direction: column; gap: 0; }
+  .carta__contact span { min-width: 0; }
+}
+
+/* ---------- Impresión deshabilitada ---------- */
+/* La carta de presentación solo se entrega descargada en PDF: si alguien
+   pulsa Ctrl+P no se imprime el documento, se muestra un aviso. */
+@media print {
+  html, body { background: #fff !important; }
+
+  .no-print, .carta-bar, .carta, .site-footer { display: none !important; }
+
+  .carta-main { padding: 0; }
+  .carta-main::after {
+    content: "La carta de presentación no se puede imprimir. Descárgala en PDF desde el botón superior.";
+    display: block; max-width: 420px; margin: 70px auto;
+    font-family: var(--font-sans); font-size: 13pt; line-height: 1.6;
+    color: #333; text-align: center;
+  }
+}

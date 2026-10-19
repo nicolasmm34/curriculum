@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum de Nicolás Montiel Melendi, Técnico Superior en Desarrollo de Aplicaciones Web. Desarrollador Java junior con experiencia en prácticas en Grupo Capgemini.">
+  <meta name="author" content="Nicolás Montiel Melendi">
+  <meta name="theme-color" content="#3C5880">
+  <meta property="og:title" content="Nicolás Montiel Melendi | Curriculum">
+  <meta property="og:description" content="Técnico Superior en Desarrollo de Aplicaciones Web. Java, SQL, Git y desarrollo web.">
+  <meta property="og:type" content="website">
+
+  <title>Nicolás Montiel Melendi | Curriculum</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233C5880'/><text x='50' y='70' font-size='56' font-family='Arial' font-weight='bold' fill='%23fff' text-anchor='middle'>N</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ==================== BARRA SUPERIOR ==================== -->
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__mark" aria-hidden="true">NM</span>
+        <span class="brand__name">Nicolás Montiel Melendi</span>
+      </a>
+
+      <button class="topbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="topbar__nav" id="navMenu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#experiencia" class="nav__link">Experiencia</a></li>
+          <li><a href="#aptitudes" class="nav__link">Aptitudes</a></li>
+          <li><a href="#idiomas" class="nav__link">Idiomas</a></li>
+          <li><a href="#actividades" class="nav__link">Actividades adicionales</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        </ul>
+        <div class="topbar__actions">
+          <a href="carta-presentacion.html" class="btn btn--outline btn--sm">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M4 6.5h16v11H4z" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="m4.5 7 7.5 6 7.5-6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Carta de presentación
+          </a>
+          <a href="docs/CV-NicolásMontielMelendi.pdf" download="CV-NicolásMontielMelendi.pdf" class="btn btn--primary btn--sm">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M12 3v11m0 0 4-4m-4 4-4-4M4 18.5h16" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Descargar CV
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== ESTRUCTURA DE DOS COLUMNAS ==================== -->
+  <div class="layout" id="inicio">
+
+    <!-- ---------- COLUMNA AZUL (perfil) ---------- -->
+    <aside class="sidebar">
+      <div class="sidebar__inner">
+        <div class="sidebar__profile">
+          <div class="photo">
+            <img src="assets/avatar.jpg" alt="Nicolás Montiel Melendi" width="800" height="800" fetchpriority="high">
+          </div>
+
+          <h1 class="sidebar__title">Nicolás<br>Montiel<br>Melendi</h1>
+          <p class="sidebar__subtitle">
+            <span class="sidebar__bullet" aria-hidden="true">•</span>
+            Técnico Superior en Desarrollo de Aplicaciones Web
+          </p>
+        </div>
+
+        <!-- SOBRE MÍ -->
+        <section class="block" aria-labelledby="h-sobremi">
+          <h2 class="pill pill--light" id="h-sobremi">
+            <span class="pill__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6" fill="none"/><path d="M4.5 20c0-3.4 3.3-6 7.5-6s7.5 2.6 7.5 6" fill="none" stroke-linecap="round"/></svg>
+            </span>
+            Sobre mí
+          </h2>
+          <p class="sidebar__text">
+            Me considero una persona perseverante, resiliente y constante en mi trabajo.
+            Tras mi reciente salida al mundo laboral, me encuentro en busca de un puesto
+            de trabajo donde exprimir al máximo mis aptitudes y que, al mismo tiempo,
+            me suponga un pequeño reto.
+          </p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="block" aria-labelledby="h-contacto-sidebar">
+          <h2 class="pill pill--light" id="h-contacto-sidebar">
+            <span class="pill__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5z" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            Contacto
+          </h2>
+          <ul class="sidebar__list">
+            <li><strong>Teléfono:</strong> <a href="tel:+34684638946">684638946</a></li>
+            <li><strong>Correo:</strong> <a href="mailto:nicolasmm11@hotmail.com">nicolasmm11@hotmail.com</a></li>
+            <li><strong>Ubicación:</strong> Comunidad de Madrid</li>
+          </ul>
+        </section>
+
+        <!-- EDUCACIÓN -->
+        <section class="block" aria-labelledby="h-educacion-sidebar">
+          <h2 class="pill pill--light" id="h-educacion-sidebar">
+            <span class="pill__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.2" fill="none"/><path d="m8.4 13.4-1.6 7 5.2-2.6 5.2 2.6-1.6-7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            Educación
+          </h2>
+          <ul class="sidebar__list">
+            <li>
+              <strong>CIFP de los Sectores Industrial y de Servicios “La Laboral”</strong>
+              <span>CFGS de Desarrollo de Aplicaciones Web</span>
+            </li>
+            <li>
+              <strong>Escuela de Ingeniería Informática — Universidad de Oviedo</strong>
+              <span>Estudios iniciales (3 cursos)</span>
+            </li>
+            <li>
+              <strong>IES Montevil</strong>
+              <span>Bachillerato tecnológico, 2020</span>
+            </li>
+          </ul>
+        </section>
+
+        <p class="sidebar__foot">
+          <span class="sidebar__foot-dot" aria-hidden="true"></span>
+          Disponible para nuevos proyectos
+        </p>
+      </div>
+    </aside>
+
+    <!-- ---------- COLUMNA PRINCIPAL ---------- -->
+    <main class="main" id="contenido">
+
+      <!-- ===== EXPERIENCIA ===== -->
+      <section class="section" id="experiencia" aria-labelledby="h-experiencia">
+        <h2 class="pill pill--brand reveal" id="h-experiencia">
+          <span class="pill__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none"/><path d="m8 12.2 2.7 2.7L16 9.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Experiencia
+        </h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__card">
+              <h3 class="timeline__title">Prácticas formativas — Desarrollador/a Software Java</h3>
+              <p class="timeline__org">Grupo Capgemini, Marzo 2026 - Junio 2026</p>
+              <ul class="timeline__list">
+                <li>Participación en un proyecto integral dentro de un equipo de trabajo.</li>
+                <li>Manejo de herramientas de Java en un entorno profesional.</li>
+                <li>Desarrollo de tareas backend, análisis de requisitos y documentación técnica.</li>
+              </ul>
+              <div class="tags">
+                <span>Java</span><span>Spring Boot</span><span>Git</span><span>Equipo de trabajo</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__card">
+              <h3 class="timeline__title">Internship desarrollo de software FP1</h3>
+              <p class="timeline__org">Grupo Capgemini, Abril 2025 - Mayo 2025</p>
+              <ul class="timeline__list">
+                <li>Formación profesional en prácticas. Cursos de Java avanzado y Spring Boot.</li>
+                <li>Primeros pasos en el desarrollo de software dentro de un equipo de trabajo.</li>
+              </ul>
+              <div class="tags">
+                <span>Java</span><span>Spring Boot</span><span>Formación</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== APTITUDES ===== -->
+      <section class="section" id="aptitudes" aria-labelledby="h-aptitudes">
+        <h2 class="pill pill--brand reveal" id="h-aptitudes">
+          <span class="pill__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none"/><path d="m8 12.2 2.7 2.7L16 9.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Aptitudes
+        </h2>
+
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3 class="card__title">Aptitudes técnicas</h3>
+            <ul class="skills">
+              <li class="skill" data-nivel="avanzado" data-level="95">
+                <span class="skill__name">Java</span><span class="skill__value">Avanzado</span>
+                <span class="skill__bar"><i style="--w:95%"></i></span>
+              </li>
+              <li class="skill" data-nivel="avanzado" data-level="92">
+                <span class="skill__name">JavaScript</span><span class="skill__value">Avanzado</span>
+                <span class="skill__bar"><i style="--w:92%"></i></span>
+              </li>
+              <li class="skill" data-nivel="avanzado" data-level="90">
+                <span class="skill__name">SQL</span><span class="skill__value">Avanzado</span>
+                <span class="skill__bar"><i style="--w:90%"></i></span>
+              </li>
+              <li class="skill" data-nivel="avanzado" data-level="88">
+                <span class="skill__name">Git</span><span class="skill__value">Avanzado</span>
+                <span class="skill__bar"><i style="--w:88%"></i></span>
+              </li>
+              <li class="skill" data-nivel="avanzado" data-level="86">
+                <span class="skill__name">HTML5 &amp; CSS3</span><span class="skill__value">Avanzado</span>
+                <span class="skill__bar"><i style="--w:86%"></i></span>
+              </li>
+              <li class="skill" data-nivel="alto" data-level="82">
+                <span class="skill__name">Python</span><span class="skill__value">Alto</span>
+                <span class="skill__bar"><i style="--w:82%"></i></span>
+              </li>
+              <li class="skill" data-nivel="medio-alto" data-level="76">
+                <span class="skill__name">C</span><span class="skill__value">Medio/Alto</span>
+                <span class="skill__bar"><i style="--w:76%"></i></span>
+              </li>
+              <li class="skill" data-nivel="medio" data-level="66">
+                <span class="skill__name">Spring Boot</span><span class="skill__value">Medio</span>
+                <span class="skill__bar"><i style="--w:66%"></i></span>
+              </li>
+              <li class="skill" data-nivel="medio" data-level="62">
+                <span class="skill__name">C#</span><span class="skill__value">Medio</span>
+                <span class="skill__bar"><i style="--w:62%"></i></span>
+              </li>
+              <li class="skill" data-nivel="medio" data-level="58">
+                <span class="skill__name">XML / VoIP</span><span class="skill__value">Medio</span>
+                <span class="skill__bar"><i style="--w:58%"></i></span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card reveal reveal--delay">
+            <h3 class="card__title">Aptitudes personales</h3>
+            <ul class="chips">
+              <li>Perseverante</li>
+              <li>Resiliente</li>
+              <li>Responsable</li>
+              <li>Proactivo</li>
+              <li>Constante</li>
+              <li>Capacidad de aprendizaje</li>
+              <li>Trabajo en equipo</li>
+              <li>Vocabulario alto</li>
+            </ul>
+
+            <h3 class="card__title card__title--spaced">Otros datos</h3>
+            <ul class="mini-list">
+              <li><span>Permiso de conducir</span><strong>Sí</strong></li>
+              <li><span>Vehículo propio</span><strong>Sí</strong></li>
+              <li><span>Disponibilidad</span><strong>Inmediata</strong></li>
+              <li><span>Modalidad</span><strong>Presencial / híbrido</strong></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== IDIOMAS ===== -->
+      <section class="section" id="idiomas" aria-labelledby="h-idiomas">
+        <h2 class="pill pill--brand reveal" id="h-idiomas">
+          <span class="pill__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none"/><path d="m8 12.2 2.7 2.7L16 9.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Idiomas
+        </h2>
+
+        <div class="grid-2">
+          <article class="card card--lang reveal">
+            <div class="lang__head">
+              <span class="lang__flag" aria-hidden="true">🇬🇧</span>
+              <div>
+                <h3 class="card__title card__title--tight">Inglés</h3>
+                <p class="lang__note">Nivel C1 de inglés (EOI Gijón)</p>
+              </div>
+              <span class="lang__level">C1</span>
+            </div>
+            <span class="skill__bar"><i style="--w:92%"></i></span>
+            <p class="lang__desc">Expresión oral, escrita y comprensión completa.</p>
+          </article>
+
+          <article class="card card--lang reveal reveal--delay">
+            <div class="lang__head">
+              <span class="lang__flag" aria-hidden="true">🇫🇷</span>
+              <div>
+                <h3 class="card__title card__title--tight">Francés</h3>
+                <p class="lang__note">Avanzado · expresión oral</p>
+              </div>
+              <span class="lang__level">B2+</span>
+            </div>
+            <span class="skill__bar"><i style="--w:78%"></i></span>
+            <p class="lang__desc">Comprensión oral, lector y expresión oral avanzados; expresión escrita media/básica.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== ACTIVIDADES ===== -->
+      <section class="section" id="actividades" aria-labelledby="h-actividades">
+        <h2 class="pill pill--brand reveal" id="h-actividades">
+          <span class="pill__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none"/><path d="m8 12.2 2.7 2.7L16 9.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Actividades adicionales
+        </h2>
+
+        <div class="grid-3">
+          <article class="card card--activity reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 20.5s-7-4.6-7-9.5A3.9 3.9 0 0 1 12 8.4a3.9 3.9 0 0 1 7 2.6c0 4.9-7 9.5-7 9.5z" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="card__title card__title--tight">Ni Ogros Ni Princesas</h3>
+            <p class="card__text">Mediador en talleres del Consejo de la Juventud del Principado de Asturias.</p>
+          </article>
+
+          <article class="card card--activity reveal reveal--delay">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 20.5s-7-4.6-7-9.5A3.9 3.9 0 0 1 12 8.4a3.9 3.9 0 0 1 7 2.6c0 4.9-7 9.5-7 9.5z" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 11.5h5M12 9v5" fill="none" stroke-linecap="round"/></svg>
+            </span>
+            <h3 class="card__title card__title--tight">Voluntariado en aula</h3>
+            <p class="card__text">Dinamicización de un aula para niños con necesidades especiales.</p>
+          </article>
+
+          <article class="card card--activity reveal reveal--delay-2">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20v-6h6v6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="card__title card__title--tight">Monitor de campamento</h3>
+            <p class="card__text">Dos años liderando grupos de niños y adolescentes en campamentos.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== PORTFOLIO ===== -->
+      <section class="section" id="portfolio" aria-labelledby="h-portfolio">
+        <h2 class="pill pill--brand reveal" id="h-portfolio">
+          <span class="pill__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none"/><path d="m8 12.2 2.7 2.7L16 9.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Portfolio
+        </h2>
+
+        <div class="portfolio reveal">
+          <div class="portfolio__info">
+            <p class="portfolio__text">
+              Aprendo construyendo: en mi repositorio de GitHub están mis prácticas, ejercicios
+              y proyectos con <strong>Java</strong>, <strong>Spring Boot</strong> y desarrollo web.
+              Es la mejor forma de ver cómo trabajo.
+            </p>
+            <!-- Enlace a tu repositorio de GitHub -->
+            <span class="portfolio__handle">github.com/nicolasmm34</span>
+          </div>
+
+          <a href="https://github.com/nicolasmm34" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M9 19c-4 1.2-4-2.2-6-2.7m12 5.2v-3.6c0-1 .1-1.4-.5-2 2.6-.3 5.2-1.3 5.2-5.7a4.4 4.4 0 0 0-1.2-3.1 4.1 4.1 0 0 0-.1-3.1s-1-.3-3.3 1.2a11.3 11.3 0 0 0-6 0C6.7 3.7 5.7 4 5.7 4a4.1 4.1 0 0 0-.1 3.1A4.4 4.4 0 0 0 4.4 10c0 4.4 2.6 5.4 5.2 5.7-.5.5-.5 1.1-.5 2v3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Ver mi GitHub
+          </a>
+        </div>
+      </section>
+
+      <footer class="main__foot">
+        <p>© <span id="year">2026</span> Nicolás Montiel Melendi · Técnico Superior en Desarrollo de Aplicaciones Web</p>
+        <a href="#inicio" class="main__top">
+          Volver arriba
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V6m0 0-5.5 5.5M12 6l5.5 5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
